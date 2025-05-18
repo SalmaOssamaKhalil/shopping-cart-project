@@ -125,4 +125,5 @@ We use storybook to test the components. To run the storybook, use the following
 cd frontend/modules/components
 npm run storybook
 ```
+
 Now navigate to http://localhost:4400/ to see your components.

@@ -13,7 +13,7 @@
     "incremental": true,
     "paths": {
       // You shouldn't feel the need to use services in components.
-      "@services": ["modules/services/index.ts"],
+      "@services": ["modules/services/index.ts"]
     },
     "plugins": [
       {

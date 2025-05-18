@@ -1,0 +1,29 @@
+.productDetailsModal {
+  position: fixed;
+  width: 30vw;
+  max-height: 60vh;
+  left: 35vw;
+  top: 25vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  .productImage {
+    width: 200px;
+    height: 200px;
+  }
+
+  .productDescription {
+    max-height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .productTitle {
+    font-size: 1em;
+    margin-block: 10px;
+  }
+}

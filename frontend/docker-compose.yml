@@ -1,7 +1,7 @@
 services:
   playground-frontend:
     networks:
-    - celfocus-network
+      - celfocus-network
     build:
       context: .
       dockerfile: Dockerfile

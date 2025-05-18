@@ -1,2 +1,16 @@
 .page {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 18.75rem);
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .page {
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    max-width: calc(2 * 18.75rem + 1rem); /* 2 cols + 1 gap */
+    margin: 0 auto;
+  }
 }
