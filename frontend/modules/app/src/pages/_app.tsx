@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
-import { appName } from '@services';
 import Header from '../../../components/src/organisms/Header';
 import { ProductsProvider } from '../../../context/ProductsContext';
 

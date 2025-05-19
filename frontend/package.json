@@ -7,7 +7,8 @@
   ],
   "scripts": {
     "build": "nx build app --verbose",
-    "start": "nx serve app",
+    "reset": "nx reset",
+    "start": "nx serve app --verbose",
     "test:app": "nx run app:test",
     "test:services": "nx run services:test",
     "storybook": "nx run components:storybook",

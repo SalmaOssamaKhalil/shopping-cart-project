@@ -3,14 +3,16 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { composePlugins, withNx } = require('@nx/next');
 
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8082';
+
 const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   skipWaiting: true,
   runtimeCaching: [
-    // Cache API calls (your custom API)
+    // Cache API calls
     {
-      urlPattern: /^http:\/\/localhost:8082\/api\/v1\/products/,
+      urlPattern: new RegExp(`${apiBaseUrl.replace(/^https?:\/\//, '')}/api/v1/products`),
       handler: 'NetworkFirst',
       options: {
         cacheName: 'products-api-cache',
